@@ -69,19 +69,16 @@ public class Workflow_Step {
 	public void setIdAll_Interventions(int idAll_Interventions) {
 		this.idAll_Interventions = idAll_Interventions;
 	}
-	public Workflow_Step(int idworkflow_step, String firstStep,
-			String secondStep, String thirdStep, String fourStep,
-			String fiveStep, String sixStep, int idAll_Interventions) {
-		super();
-		this.idworkflow_step = idworkflow_step;
-		FirstStep = firstStep;
-		SecondStep = secondStep;
-		ThirdStep = thirdStep;
-		FourStep = fourStep;
-		FiveStep = fiveStep;
-		SixStep = sixStep;
-		this.idAll_Interventions = idAll_Interventions;
+	@Override
+	public String toString() {
+		return "Workflow_Step [idworkflow_step=" + idworkflow_step
+				+ ", FirstStep=" + FirstStep + ", SecondStep=" + SecondStep
+				+ ", ThirdStep=" + ThirdStep + ", FourStep=" + FourStep
+				+ ", FiveStep=" + FiveStep + ", SixStep=" + SixStep
+				+ ", idAll_Interventions=" + idAll_Interventions + "]";
 	}
+
+	
     
 	
 }

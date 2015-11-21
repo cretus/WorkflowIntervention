@@ -32,12 +32,11 @@ public class Operateur {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-	public Operateur(int id, String nom, String prenom) {
-		super();
-		this.id = id;
-		this.nom = nom;
-		this.prenom = prenom;
+	@Override
+	public String toString() {
+		return "Operateur [id=" + id + ", nom=" + nom + ", prenom=" + prenom
+				+ "]";
 	}
-	
+ 
 
 }
