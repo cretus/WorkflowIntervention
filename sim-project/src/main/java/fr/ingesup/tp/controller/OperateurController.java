@@ -24,7 +24,7 @@ private OperateurService operatorService;
 	}
 	@RequestMapping(value = "/")
 	public String get(){
-		return "home";
+		return "index";
 	}
 	
 	@RequestMapping(value = "/operators")
